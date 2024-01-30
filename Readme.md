@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Маргарита  Смирнова](https://up.htmlacademy.ru/htmlcss/39/user/2425669).
-* Наставник: `Неизвестно`.
+- Студент: [Маргарита Смирнова](https://up.htmlacademy.ru/htmlcss/39/user/2425669).
+- Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
