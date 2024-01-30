@@ -2,6 +2,7 @@
 
 - Студент: [Маргарита Смирнова](https://up.htmlacademy.ru/htmlcss/39/user/2425669).
 - Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
+- Сайт: [Мой проект Седона] (https://margarita0206.github.io/2425669-sedona-39/)
 
 ---
 
