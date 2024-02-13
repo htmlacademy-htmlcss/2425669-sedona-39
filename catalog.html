@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page.header">
-      <nav class="header.navigation">
-        <a class="logo.navigation" href="index.html">
-          <img class="page.logo.img" src="images/logo-Sedona.png" width="138" height="64" alt="Логотип города Седона">
+    <header class="page-header">
+      <nav class="header-navigation">
+        <a class="logo-navigation" href="index.html">
+          <img class="page-logo-img" src="images/logo-sedona.svg" width="138" height="64" alt="Логотип города Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item" href="#">
@@ -42,6 +43,7 @@
 
     <main class="main-container">
       <header class="inner-header">
+        <div class="inner-container">
         <h1 class="inner-header-title">Гостиницы Седона</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -108,23 +110,23 @@
     <fieldset class="catalog-filter-group">
       <legend class="catalog-filter-title">Стоимость:</legend>
     </fieldset>
-    <button class="button" type="submit">Применить</button>
+    <button class="button-catalog" type="submit">Применить</button>
     <button class="button-reset" type="reset">Сбросить</button>
         </form>
-
+      </div>
     <h2 class="inner-header-caption">Найдено гостиниц: 38</h2>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
         <option value="popular">Сначала популярное</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
-    <a href="#" class="button button-light">
+    <a href="#" class="button-light">
       <span class="visually-hidden">Показать карточки</span>
     </a>
-    <a href="#" class="button button-light">
+    <a href="#" class="button-light">
       <span class="visually-hidden">Показать по одной</span>
     </a>
-    <a href="#" class="button button-light">
+    <a href="#" class="button-light">
       <span class="visually-hidden">Показать список</span>
     </a>
     <ul class="product-list">
@@ -174,7 +176,7 @@
     </ul>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link">1</a>
+          <a class="pagination-link-active">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -193,7 +195,7 @@
         </li>
     </ul>
         </section>
-        <section class="all">
+        <section class="all-catalog">
           <h2 class="main-all">Подпишитесь на рассылку</h2>
           <p class="main-all-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
@@ -208,17 +210,17 @@
 
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link-vk" href="#">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link-telegram" href="#">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-link" href="#">
+            <a class="social-link-youtube" href="#">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
