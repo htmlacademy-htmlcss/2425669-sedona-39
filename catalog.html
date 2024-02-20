@@ -7,10 +7,11 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="header-navigation">
-        <a class="logo-navigation" href="index.html">
+      <div class="navigation-link-container">
+      <a class="logo-navigation" href="index.html">
           <img class="page-logo-img" src="images/logo-sedona.svg" width="138" height="64" alt="Логотип города Седона">
         </a>
+        <nav class="header-navigation">
         <ul class="navigation-list">
           <li class="navigation-item" href="#">
             <a class="navigation-link navigation-active-link" href="#">Главная</a>
@@ -36,14 +37,15 @@
             </a>
           </li>
         </ul>
-
       <a class="header-button" href="#">Хочу сюда!</a>
     </header>
+        </div>
 
 
     <main class="main-container">
+      <div class="inner-container">
       <header class="inner-header">
-        <div class="inner-container">
+
         <h1 class="inner-header-title">Гостиницы Седона</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -55,7 +57,7 @@
         </ul>
         </header>
         <section class="catalog-hotels">
-        <h2 class="visually-hidden">Список каталога с фильтрами</h2>
+        <h2 class="visually-hidden" hidden>Список каталога с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -66,14 +68,12 @@
           Бассейн
           </label>
         </li>
-
         <li class="catalog-filter-item>"
           <label class="control">
           <input class="control-input" type="checkbox" name="parking" checked>
           Парковка
           </label>
         </li>
-
         <li class="catalog-filter-item>"
           <label class="control">
           <input class="control-input" type="checkbox" name="wi-fi">
@@ -91,14 +91,12 @@
             Гостиница
             </label>
           </li>
-
           <li class="catalog-filter-item>"
             <label class="control">
             <input class="control-input" type="radio" name="hotel" value="motel">
             Мотель
             </label>
           </li>
-
           <li class="catalog-filter-item>"
             <label class="control">
             <input class="control-input" type="radio" name="hotel" value="apartaments">
@@ -114,6 +112,7 @@
     <button class="button-reset" type="reset">Сбросить</button>
         </form>
       </div>
+      <div class="inner-caption-container">
     <h2 class="inner-header-caption">Найдено гостиниц: 38</h2>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
@@ -129,6 +128,7 @@
     <a href="#" class="button-light">
       <span class="visually-hidden">Показать список</span>
     </a>
+      </div>
     <ul class="product-list">
       <li class="product-card">
         <img class="product-card-img" src="images/hotel-1.jpg" width="300" height="212" alt="Звездное небо сверху в расщелине горы">
@@ -147,7 +147,7 @@
         <p class="product-card-text">Гостиница</p>
         <p class="product-price">От 5000 ₽</p>
         <a class="product-card-button" href="#">Подробнее</a>
-        <button class="button-favorite">В Избранное</button>
+        <button class="button-favorite-active">В Избранном</button>
         <p class="hotels-stars hotels-stars-4"><span class="visually-hidden">4 звезды</span></p>
         <p class="product-card-reyting">Рейтинг: <span>9,2</span></p>
         </li>
@@ -200,9 +200,8 @@
           <p class="main-all-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
 
           <form class="form-appointment" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden">Введите ваш e-mail
+            <label class="visually-hidden" hidden>Введите ваш e-mail</label>
             <input type="text" name="form-appointment" placeholder="Ваш e-mail">
-            </label>
             <button class="button" type="submit">Подписаться</button>
           </form>
         </section>
