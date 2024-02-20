@@ -18,6 +18,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
   color: #333333;
   background-color: #F2F2F2;
   margin: 0;
@@ -40,6 +41,7 @@ html {
 }
 .header-navigation {
   height: 64px;
+  display: block;
 }
 
 .logo-navigation {
@@ -60,8 +62,8 @@ html {
   padding: 20px 16px 20px 16px;
   width: 339px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .navigation-link-container {
@@ -74,16 +76,17 @@ justify-content: space-between;
   font-size: 20px;
   text-decoration: none;
   text-align: center;
-
-
 }
 .navigation-user {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.navigation-link-current {
-
+.navigation-active-link {
+ text-decoration: underline;
+ text-decoration-color:  #756257;
+ text-underline-offset: 21px;
+ text-decoration-thickness: 2px;
 }
 
 
@@ -125,14 +128,12 @@ justify-content: space-between;
   height: 20px;
 }
 .advantages-reasons {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   width: 651px;
   margin: 0 auto;
   padding-bottom: 69px;
-
 }
 .advantages-title-text {
   font-size: 24px;
@@ -143,10 +144,8 @@ justify-content: space-between;
   text-transform: uppercase;
   padding: 102px 112px 62px 102px;
   margin: 0;
-
 }
 .advantages-item-p {
-  font-weight: 400;
   text-align: center;
   color: #FFFFFF;
   padding: 0 85px 102px 85px;
@@ -157,28 +156,21 @@ justify-content: space-between;
   list-style-type: none;
   padding: 0;
   margin: 0;
-
-
 }
 .advantages-block {
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
-
-
 }
 .advantages-item-desc-light {
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
   height: 385px;
-
 }
 .advantages-content {
   width: 400px;
   height: 385px;
-
-
 }
 .advantages-item-desc {
   background: rgba(131, 179, 211, 0.2);
@@ -198,7 +190,6 @@ justify-content: space-between;
   margin: 0;
 }
 .advantages-items {
-  font-weight: 400;
   text-align: center;
   color: #000000;
   padding: 0 85px 112px 85px;
@@ -209,8 +200,6 @@ justify-content: space-between;
   flex-direction: row;
 }
 
-
-
 .advantages-call {
   font-size: 30px;
   line-height: 36px;
@@ -219,11 +208,9 @@ justify-content: space-between;
   font-weight: 700;
   text-transform: uppercase;
   margin: 64px 347px 20px 347px;
-
 }
 .advantages-text {
   font-size: 22px;
-  font-weight: 400;
   line-height: 26px;
   text-align: center;
   margin-bottom: 64px;
@@ -258,24 +245,19 @@ justify-content: space-between;
   padding: 183px 85px 30px 85px;
 }
 .features-text {
-  font-weight: 400;
   text-align: center;
   margin: 0;
   padding: 0 85px 81px 85px;
 }
 
-
-
 .advantages-list {
 padding: 0;
 }
-
 
 .main-container {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
-
 }
 .main-search {
   margin: 96px 304px 96px 304px;
@@ -297,7 +279,6 @@ padding: 0;
 }
 
 .main-search-text {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -313,6 +294,7 @@ padding: 0;
   padding: 96px 258px 104px 258px;
 }
 .button {
+  font-family: "PT Sans", sans-serif;
   text-align: center;
   font-size: 20px;
   line-height: 36px;
@@ -320,9 +302,29 @@ padding: 0;
   background: #82B3D3;
   color: #FFFFFF;
   text-transform: uppercase;
-
+  border-radius: 0 4px 4px 0;
+  width: 232px;
+  height: 52px;
+  border-width: 0;
+  padding: 0;
 }
-
+.input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #F2F2F2;
+  color: #000000;
+  border-radius: 4px 0 0 4px;
+  padding: 0;
+  width: 452px;
+  height: 52px;
+  border-width: 0;
+  padding-left: 20px
+}
+.form-appointment {
+  display: flex;
+}
 .main-all {
   font-size: 30px;
   line-height: 36px;
@@ -346,12 +348,10 @@ padding: 0;
   margin: 0 auto;
   display: block;
   width: 376px;
-
 }
 .main-all-text {
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
   text-align: center;
   margin: 0;
   margin-bottom: 54px;
@@ -366,12 +366,10 @@ padding: 0;
   justify-content: space-between;
   padding: 40px 70px 30px 70px;
   margin: 0 auto;
-
 }
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
-  font-weight: 400;
   text-align: center;
   color: #000000;
   text-decoration: none;
@@ -409,8 +407,6 @@ padding: 0;
   background-repeat: no-repeat;
   color: #FFFFFF;
   background-color: #82B3D3;
-
-
 }
 .inner-header-title {
   font-size: 60px;
@@ -422,7 +418,6 @@ padding: 0;
   font-weight: 400;
   text-decoration: none;
   color: #FFFFFF;
-
 }
 .breadcrumbs {
   list-style-type: none;
@@ -461,6 +456,7 @@ padding: 0;
   height: 36px;
   border-radius: 4px;
   padding: 8px 50px 8px 50px;
+  border-width: 0;
 }
 .button-reset {
   font-size: 16px;
@@ -468,6 +464,7 @@ padding: 0;
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
+  border-width: 0;
   width: 191px;
   height: 36px;
   border-radius: 4px;
@@ -498,11 +495,18 @@ padding: 0;
   padding: 0;
 }
 .select-control {
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   color: #333333;
   width: 292px;
   height: 49px;
+  border-radius: 4px;
+  border-width: 2px;
+  background-color: #FFFFFF;
+  border-color: #E5E5E5;
+  padding: 14px 0 14px 20px;
 }
+
 .product-card-title {
   font-size: 24px;
   line-height: 28px;
@@ -515,13 +519,13 @@ padding: 0;
   text-transform: uppercase;
   padding: 8px 18px 8px 18px;
   border-radius: 4px;
-  width: 140px;
-  height: 36px;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
   margin: 0;
+  border-width: 0;
 }
 .product-list {
   list-style-type: none;
@@ -530,11 +534,14 @@ padding: 0;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 70px 80px 70px;
-
 }
 .product-card {
   padding: 20px 20px 20px 20px;
 border: 1px solid rgba(230, 230, 230, 1);
+margin-bottom: 20px;
+}
+.product-card: last-child {
+  margin-bottom: 0;
 }
 .product-card-text {
   font-weight: 400;
@@ -553,9 +560,8 @@ border: 1px solid rgba(230, 230, 230, 1);
   text-transform: uppercase;
   text-decoration: none;
   background:#756157;
+  border-width: 0;
   color: #FFFFFF;
-  width: 140px;
-  height: 36px;
   border-radius: 4px;
   padding: 8px 26px 8px 26px;
 }
@@ -568,9 +574,8 @@ border: 1px solid rgba(230, 230, 230, 1);
   text-transform: uppercase;
   text-decoration: none;
   background: #82B3D3;
+  border-width: 0;
   color: #FFFFFF;
-  width: 140px;
-  height: 36px;
   border-radius: 4px;
   padding: 8px 20px 8px 20px;
 }
@@ -644,7 +649,6 @@ border: 1px solid rgba(230, 230, 230, 1);
   font-weight: 700;
   text-align: center;
   background: #82B3D3;
-
 }
 
 .pagination-btn {
