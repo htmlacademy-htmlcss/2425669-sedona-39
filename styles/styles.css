@@ -384,6 +384,17 @@ html {
   padding: 0;
   cursor: pointer;
 }
+.button:hover {
+  background: #68A2CA;
+}
+.button:focus {
+  background: #68A2CA;
+}
+.button:active {
+  background: #82B3D3;
+  color:#FFFFFF4D;
+}
+
 .input {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -424,6 +435,16 @@ html {
   margin: 0 auto;
   display: block;
   width: 376px;
+}
+.search-button:hover {
+  background-color: #615048;
+}
+.search-button:focus {
+  background-color: #615048;
+}
+.search-button:active {
+  background-color: #756157;
+  color:#FFFFFF4D;
 }
 .main-all-text {
   font-size: 22px;
@@ -597,6 +618,17 @@ html {
   margin-bottom: 32px;
   cursor: pointer;
 }
+.button-catalog:hover {
+  background: #68A2CA;
+}
+.button-catalog:focus {
+  background: #68A2CA;
+}
+.button-catalog:active {
+  background: #82B3D3;
+  color:#FFFFFF4D;
+
+}
 .button-reset {
   font-size: 16px;
   line-height: 20px;
@@ -611,6 +643,16 @@ html {
   padding: 8px 50px 8px 50px;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+}
+.button-reset:hover {
+  color: #FFFFFF;
+}
+.button-reset:focus {
+  color: #FFFFFF;
+}
+.button-reset:active {
+  color: #FFFFFF4D;
+
 }
 .button-catalog-reset {
   display: block;
