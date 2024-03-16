@@ -9,7 +9,7 @@
     <div class="page-container">
     <header class="page-header">
       <a class="logo-navigation" href="index.html">
-          <img class="page-logo-img" src="images/logo-sedona.svg" width="138" height="64" alt="Логотип города Седона">
+          <img class="page-logo-img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона">
         </a>
         <nav class="header-navigation">
         <ul class="navigation-list">
@@ -27,9 +27,6 @@
         <ul class="navigation-user">
           <li class="navigation-search">
             <a class="navigation-link-user navigation-link-user-search" href="#">
-              <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z" fill="black"/>
-                </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
@@ -139,6 +136,72 @@
         <span class="visually-hidden">Ссылка на разработчика htmlacademy</span>
       </a>
     </footer>
+
+    <div class="modal-container">
+<div class="modal modal-search">
+  <button class="modal-close-button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+  <section class="modal-content">
+    <h2 class="modale-title">Поиск гостиницы в Седоне</h2>
+    <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+      <fieldset class="field-group long-fieldset">
+        <label class="search-date-group" for="search-date">Дата Заезда:</label>
+
+        <input class="search-date-check search-date-calendar" type="text" id="date" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
+      </fieldset>
+      <p class="attention-message error-message">Мы не можем отправить вас в прошлое.</p>
+
+      <fieldset class="field-group long-fieldset">
+        <label class="search-date-group" for="search-date">Дата Выезда:</label>
+
+        <input class="search-date-exit search-date-calendar" type="text" id="date" name="date" value="1 сентября 2023" placeholder="Укажите дату" required>
+      </fieldset>
+      <p class="attention-message">На эти даты есть свободные номера. Пока есть.</p>
+
+
+      <fieldset class="field-group">
+        <legend class="visually-hidden">Количество взрослых гостей</legend>
+        <label class="search-date-group search-adults" for="search-date">Взрослые:</label>
+        <div class="booking-guest-container">
+      <button class="search-date-quantity-minus minus-mark" type="button">
+        <span class="visually-hidden">Уменьшить количество</span>
+      </button>
+      <input class="search-date-quantity" type="number" id="date" name="date" value="2">
+      <button class="search-date-quantity-plus plus-mark" type="button">
+        <span class="visually-hidden">Увеличить количество</span>
+      </button>
+        </div>
+    </fieldset>
+
+      <fieldset class="field-group">
+        <legend class="visually-hidden">Количество детей</legend>
+        <label class="search-date-group search-childrens" for="search-date">Дети:</label>
+<span class="tooltip">
+<button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date">
+  <span class="visually-hidden">Показать дополнительную информацию</span>
+</button>
+<div class="tooltip-container">
+  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+</div>
+</span>
+
+      <div class="booking-guest-container">
+        <button class="search-date-quantity-minus minus-mark" type="button">
+          <span class="visually-hidden">Уменьшить количество</span>
+        </button>
+        <input class="search-date-quantity" type="number" id="date" name="date" value="2">
+        <button class="search-date-quantity-plus plus-mark" type="button">
+          <span class="visually-hidden">Увеличить количество</span>
+        </button>
+      </div>
+      </fieldset>
+    </form>
+    <button class="date-search" type="submit">Найти</button>
+  </section>
+</div>
+    </div>
     </div>
   </body>
 </html>
