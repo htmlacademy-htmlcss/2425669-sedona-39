@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>Каталог Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   </head>
   <body>
     <div class="page-container">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="logo-navigation" href="index.html">
-          <img class="page-logo-img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона">
+          <img class="page-logo-img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <nav class="header-navigation">
         <ul class="navigation-list">
-          <li class="navigation-item navigation-item-active" href="#">
+          <li class="navigation-item navigation-item-active">
             <a class="navigation-link navigation-active-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
@@ -39,12 +40,12 @@
         </ul>
       <a class="header-button" href="#">Хочу сюда!</a>
     </header>
-    <main class="main-container">
-      <section class="main-hero">
+    <main class="main-container" data-test="main">
+      <section class="main-hero" data-test="hero">
         <h1 class="visually-hidden">Город в Аризоне-Седона</h1>
         <img class="main-img" src="images/welcome.svg" width="458" height="352" alt="Welcome to the Gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
-      <section class="main-advantages">
+      <section class="main-advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества города Седона</h2>
         <p class="advantages-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -54,7 +55,7 @@
             <h3 class="advantages-title-text">Настоящий городок</h3>
             <p class="advantages-item-p">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantages-img" src="images/photo-1.jpg" width="800" height="385" alt="Домики в городке рядом с горами">
+            <img class="advantages-img" src="images/photo-1.jpg" width="800" height="385" alt="Домики в городке рядом с горами.">
           </li>
 
           <li class="advantages-composite-item advantages-item-desc-light">
@@ -71,49 +72,49 @@
           </li>
 
           <li class="advantages-item advantages-item-content">
-            <img class="advantages-img" src="images/photo-2.jpg" width="800" height="385" alt="Мост Дьявола в Гранд-Каньоне">
+            <img class="advantages-img" src="images/photo-2.jpg" width="800" height="385" alt="Мост Дьявола в Гранд-Каньоне.">
             <div class="advantages-content">
-            <h3 class="advantages-title-text">Там есть мост Дьявола</h3>
+            <h3 class="advantages-title-text">Там есть<br>мост Дьявола</h3>
             <p class="advantages-item-p">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
         </ul>
       </section>
-      <section class="features"></section>
+      <section class="features" data-test="service">
         <h2 class="visually-hidden">Преимущества города Седона</h2>
         <p class="advantages-call">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="advantages-text">Опытный персонал и качественное обслуживание!</p>
         <ul class="features-list">
           <li class="features-item-desc">
           <h3 class="features-subtitle features-subtitle-home">Жильё</h3>
-          <p class="features-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <p class="features-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
           <li class="features-item-desc-light">
           <h3 class="features-subtitle features-subtitle-food">Еда</h3>
-          <p class="features-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <p class="features-text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
           <li class="features-item-desc">
           <h3 class="features-subtitle features-subtitle-suvenirs">Сувениры</h3>
-          <p class="features-text">Не только китайского, но и настоящего местного производства!</p>
+          <p class="features-text">Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </li>
         </ul>
       </section>
-      <section class="main-search">
+      <section class="main-search" data-test="search">
         <h2 class="main-search-subtitle">Заинтересовались?</h2>
         <p class="main-search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="all">
         <h2 class="main-all">Подпишитесь на рассылку</h2>
-        <p class="main-all-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="main-all-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="form-appointment" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden">ВВедите ваш e-mail</label>
-          <input class="input" type="text" name="form-appointment" placeholder="Ваш e-mail">
+          <input class="input" type="text" name="form-appointment" id="e-mail" placeholder="Ваш e-mail">
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-link social-link-vk" href="#">
@@ -136,72 +137,5 @@
         <span class="visually-hidden">Ссылка на разработчика htmlacademy</span>
       </a>
     </footer>
-
-    <div class="modal-container">
-<div class="modal modal-search">
-  <button class="modal-close-button">
-    <span class="visually-hidden">Закрыть</span>
-  </button>
-  <section class="modal-content">
-    <h2 class="modale-title">Поиск гостиницы в Седоне</h2>
-    <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-
-      <fieldset class="field-group long-fieldset">
-        <label class="search-date-group" for="search-date">Дата Заезда:</label>
-
-        <input class="search-date-check search-date-calendar" type="text" id="date" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
-      </fieldset>
-      <p class="attention-message error-message">Мы не можем отправить вас в прошлое.</p>
-
-      <fieldset class="field-group long-fieldset">
-        <label class="search-date-group" for="search-date">Дата Выезда:</label>
-
-        <input class="search-date-exit search-date-calendar" type="text" id="date" name="date" value="1 сентября 2023" placeholder="Укажите дату" required>
-      </fieldset>
-      <p class="attention-message">На эти даты есть свободные номера. Пока есть.</p>
-
-
-      <fieldset class="field-group">
-        <legend class="visually-hidden">Количество взрослых гостей</legend>
-        <label class="search-date-group search-adults" for="search-date">Взрослые:</label>
-        <div class="booking-guest-container">
-      <button class="search-date-quantity-minus minus-mark" type="button">
-        <span class="visually-hidden">Уменьшить количество</span>
-      </button>
-      <input class="search-date-quantity" type="number" id="date" name="date" value="2">
-      <button class="search-date-quantity-plus plus-mark" type="button">
-        <span class="visually-hidden">Увеличить количество</span>
-      </button>
-        </div>
-    </fieldset>
-
-      <fieldset class="field-group">
-        <legend class="visually-hidden">Количество детей</legend>
-        <label class="search-date-group search-childrens" for="search-date">Дети:</label>
-<span class="tooltip">
-<button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date">
-  <span class="visually-hidden">Показать дополнительную информацию</span>
-</button>
-<div class="tooltip-container">
-  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-</div>
-</span>
-
-      <div class="booking-guest-container">
-        <button class="search-date-quantity-minus minus-mark" type="button">
-          <span class="visually-hidden">Уменьшить количество</span>
-        </button>
-        <input class="search-date-quantity" type="number" id="date" name="date" value="2">
-        <button class="search-date-quantity-plus plus-mark" type="button">
-          <span class="visually-hidden">Увеличить количество</span>
-        </button>
-      </div>
-      </fieldset>
-    </form>
-    <button class="date-search" type="submit">Найти</button>
-  </section>
-</div>
-    </div>
-    </div>
   </body>
 </html>
